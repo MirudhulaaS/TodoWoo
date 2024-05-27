@@ -1,0 +1,61 @@
+
+
+body {
+    background-color: rgb(166, 216, 214);
+}
+
+.div-1 {
+    background-color: rgba(160, 214, 51, 0.657);
+    padding: 10px;
+    text-align: left;
+}
+
+.title {
+    margin-left: 10px;
+    color: white;
+    font-size: 50px;
+    font-family: sans-serif;
+    text-align: left;
+}
+
+.link {
+    text-decoration: None;
+    color: white;
+    font-size: 20px;
+    font-family: Gill Sans;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.link:hover {
+    text-shadow: rgb(65, 65, 65);
+    color: #2091a0;
+}
+
+
+.loggeduser {
+    text-align: right;
+    margin-left: 20px;
+    color: rgb(22, 79, 19);
+}
+
+.logout-container {
+    text-align: right; 
+}
+
+.logout {
+    background-color: rgb(166, 216, 214);
+    color: white;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+
+}
+
+.logout:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgba(160, 214, 51, 0.657);
+}
+    

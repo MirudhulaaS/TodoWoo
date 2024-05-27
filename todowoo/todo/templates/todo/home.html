@@ -1,0 +1,27 @@
+
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+    <html>
+        <head>
+            <link rel="stylesheet" href="{% static 'home.css' %}">
+            <link rel="stylesheet" href="{% static 'base.css' %}">
+        </head>
+        <body>
+            <div class="welcome">
+                <p>
+                    <b><i>Welcome to our Xo TOD application !!!</i></b>
+                    <br><br>
+                    Your ultimate tool for staying organized, productive, 
+                    and on top of your tasks. Whether you're managing personal errands, work projects, or daily chores, 
+                    our app has everything you need to streamline your tasks and achieve your goals with ease.
+                </p>
+            </div>
+        </body>
+    </html>
+
+{% endblock %}
+

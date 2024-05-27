@@ -1,0 +1,32 @@
+
+
+.welcome {
+    background-color: white;
+    color: rgb(86, 86, 86);
+    font-size: 25px;
+    margin: 2px solid black;
+    text-align: center;
+    font-family: verdana; 
+    border-radius: 5px;
+    padding: 50px;
+    margin-left: 200px; 
+    margin-right: 200px; 
+    margin-top: 50px; 
+    margin-bottom: 100px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.start {
+    background-color: #007bff; 
+    color: #fff;
+    border: none; 
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer; 
+    transition: background-color 0.3s;
+}
+
+.start:hover {
+    background-color: #0056b3; 
+}

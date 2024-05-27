@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+    <html>
+        <head>
+            <link rel="stylesheet" href="{% static 'current.css' %}">
+            <link rel="stylesheet" href="{% static 'base.css' %}">
+        </head>
+        <body>
+            <div class="container">
+                <h1 class="sub-title">Your assigned Tasks</h1>
+                <ul class="list">
+                    {% for todo in todos %}
+                        <li> 
+                            <a href="{% url 'viewtodo' todo.id %}">
+                                {% if todo.important %} <b> {% endif %} {{ todo.title }} {% if todo.important %} </b> {% endif %} 
+                            </a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </body>
+    </html>
+
+{% endblock %}

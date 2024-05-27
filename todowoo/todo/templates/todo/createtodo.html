@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+    <head>
+        <title>Xo TOD</title>
+        <link rel="stylesheet" href="{% static 'create.css' %}">
+        <link rel="stylesheet" href="{% static 'base.css' %}">
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="sub-title">Add your Todo Here</h1>
+
+            <h2>{{ error }}</h2>
+            <form class="form" method="POST">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit" class="submit-btn">Save</button>
+            </form>
+        </div>
+        
+    </body>
+
+{% endblock %}

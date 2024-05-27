@@ -1,0 +1,18 @@
+
+.container {
+    text-align: left;
+}
+
+.sub-title {
+    color: white;
+    font-size: 50px;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.todo-title {
+    color: white;
+    font-size: 30px;
+    font-family: sans-serif;
+    text-align: left;
+}

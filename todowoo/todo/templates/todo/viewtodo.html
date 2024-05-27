@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+    <head>
+        <title>Xo TOD</title>
+        <link rel="stylesheet" href="{% static 'viewtodo.css' %}">
+        <link rel="stylesheet" href="{% static 'base.css' %}">
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="sub-title">View Todo</h1>
+
+            <h1 class="error"> {{ error }} </h1>
+    
+            <h3 class="todo-title">{{ todo.title }}</h3>
+    
+            <form method="POST">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit">Save</button>
+            </form>
+    
+            <form method="POST" action="{% url 'completetodo' todo.id %}">
+                {% csrf_token %}
+                <button type="submit"> COMPLETE </button>
+            </form>
+    
+            <form method="POST" action="{% url 'deletetodo' todo.id %}">
+                {% csrf_token %}
+                <button type="submit"> DELETE </button>
+            </form>
+        </div>
+    </body>
+    
+
+{% endblock %}
